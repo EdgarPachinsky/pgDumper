@@ -9,6 +9,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
           integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <script src="../../../NodeSerialPortDataInfo/app.js"></script>
 </head>
 <body>
 
@@ -24,6 +25,26 @@
                     </div>
                 </div>
             </nav>
+        </div>
+
+        <div class="col-md-6">
+
+            <label for="host" class="mg-top-10">DB Host</label>
+            <input type="text" class="form-control" id="host">
+
+            <label for="port" class="mg-top-10">PORT</label>
+            <input class="form-control" id="port">
+
+            <label for="username" class="mg-top-10">Username</label>
+            <input type="text" class="form-control" id="username">
+
+            <label for="password" class="mg-top-10">Password</label>
+            <input type="password" class="form-control" id="password">
+
+            <label for="db_name" class="mg-top-10">DB NAME</label>
+            <input type="text" class="form-control" id="db_name">
+
+            <button class="btn btn-default c-button" type="button" onclick="dump()">Dump</button>
         </div>
     </div>
 
