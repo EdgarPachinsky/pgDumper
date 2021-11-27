@@ -1,4 +1,8 @@
-const socket = io("http://localhost:7000");
+const socket = io("https://pgdumper.herokuapp.com:7000");
+
+socket.on('handshake',(data) => {
+    console.log(data)
+})
 
 function makeRandomName(length) {
     let result           = '';

@@ -35,6 +35,10 @@ const io = new socket.Server(server, {cors: {origin: `https://pgdumper.herokuapp
 io.on('connection', (socket) => {
 
     console.log(`User connected`)
+
+    io.emit('handshake', {
+        connected: true
+    })
 });
 
 
